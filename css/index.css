@@ -1,0 +1,526 @@
+body {
+  min-width: none;
+  min-height: nonepx;
+  background-color: rgb(42, 62, 64);
+  font: 400 1.75em/1.38 'Ubuntu Condensed';
+  color: rgb(255, 255, 255);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.album {
+  display: block;
+  float: left;
+  font-size: 1.143em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.albuminfo {
+  float: left;
+  width: 100%;
+  height: 90px;
+}
+
+.artist {
+  display: block;
+  float: left;
+  clear: both;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.38;
+  color: rgb(255, 255, 255);
+}
+
+.container-main {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image {
+  display: block;
+  float: left;
+  width: 66.0416666666%;
+  max-width: 640px;
+  height: auto;
+  overflow: hidden;
+}
+
+.imgur {
+  height: 62px;
+}
+
+.infobox {
+  float: left;
+  width: 100%;
+}
+
+.launch {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 42px;
+  margin-top: 20px;
+  border-radius: 21px;
+  background-color: rgb(68, 255, 169);
+  font-size: 0.643em;
+  font-weight: 400;
+  line-height: 1.38;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  float: left;
+  width: 150px;
+  min-width: none;
+  height: 42px;
+  min-height: nonepx;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.logo-image {
+  float: left;
+  width: 42px;
+  min-width: none;
+  height: 42px;
+  min-height: nonepx;
+  border-radius: 21px;
+  background-color: rgb(17, 195, 215);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.logo-text {
+  display: block;
+  float: left;
+  min-width: none;
+  min-height: nonepx;
+  margin: 6px 0 0 6px;
+  background-color: rgba(0, 0, 0, 0);
+  font-style: normal;
+  font-size: 0.786em;
+  line-height: 1.38;
+  color: rgb(17, 195, 215);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.menu {
+  float: right;
+  width: 42px;
+  min-width: none;
+  height: 42px;
+  min-height: nonepx;
+  margin-right: 0.0959%;
+  border-radius: 21px;
+  background-color: rgb(6, 66, 73);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.meta {
+  float: right;
+  width: 31.9791666666%;
+  height: 634px;
+}
+
+.nav-main {
+  float: left;
+  width: 100%;
+  min-width: none;
+  height: 58px;
+  min-height: nonepx;
+  background-color: rgb(2, 23, 26);
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.nav-main .container-main {
+  min-width: none;
+  height: 42px;
+  min-height: nonepx;
+  margin-top: 7px;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  -ms-transform: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+  -webkit-filter: none;
+  -moz-filter: none;
+  -o-filter: none;
+  -ms-filter: none;
+  filter: none;
+}
+
+.player {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  width: 100%;
+  height: 380px;
+  margin-top: 24px;
+  background-color: rgb(222, 222, 222);
+}
+
+.social {
+  position: relative;
+  float: left;
+  clear: both;
+  width: 106.5146579804%;
+  height: 62px;
+  margin: 24px 0 0 -3.25646%;
+}
+
+.facebook,
+.google,
+.twitter {
+  height: 62px;
+}
+
+.width25 {
+  position: absolute;
+  top: 0;
+  width: 25%;
+}
+
+.width25 .facebook,
+.width25 .google,
+.width25 .imgur,
+.width25 .twitter {
+  width: 62px;
+  margin: 0 auto;
+  background-color: rgb(222, 222, 222);
+}
+
+.wrapper {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 22;
+  width: 99.9999999999%;
+  height: 380px;
+  margin-top: -380px;
+  overflow: hidden;
+}
+
+.container-main-2 {
+  margin-top: 82px;
+}
+
+.width25-1 {
+  left: 0;
+  z-index: 15;
+}
+
+.width25-2 {
+  left: 25%;
+  z-index: 13;
+}
+
+.width25-3 {
+  left: 50%;
+  z-index: 11;
+}
+
+.width25-4 {
+  left: 75%;
+  z-index: 9;
+}
+
+@media(max-width: 1200px) {
+  .container-main {
+    width: 96%;
+    margin-top: 24px;
+  }
+
+  .container-main .image {
+    float: none;
+    width: 82.9166666666%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-main .menu {
+    margin-right: 0.09494%;
+  }
+
+  .container-main .meta {
+    float: none;
+    width: 634px;
+    margin-top: 24px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .infobox .social {
+    width: 106.1889250814%;
+    margin-top: 22px;
+    margin-left: -2.9316%;
+  }
+
+  .meta .infobox {
+    position: relative;
+    z-index: 21;
+    width: 48.1072555205%;
+  }
+
+  .meta .player {
+    position: relative;
+    clear: none;
+    z-index: 7;
+    width: 48.1072555205%;
+    margin-top: 0;
+    margin-left: 3.78549%;
+  }
+
+  .meta .wrapper {
+    position: relative;
+    z-index: 22;
+    margin-top: -118px;
+  }
+
+  .nav-main .container-main {
+    width: 96%;
+  }
+
+  .container-main-2 {
+    float: left;
+    clear: both;
+    margin-right: 0;
+    margin-left: 2%;
+  }
+
+  .social .width25-1 {
+    width: 24%;
+  }
+}
+
+@media(max-width: 770px) {
+  body {
+    font-size: 1.75em;
+  }
+
+  .container-main .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .container-main .logo {
+    margin-left: -0.00846%;
+  }
+
+  .container-main .menu {
+    margin-right: 0.03171%;
+  }
+
+  .container-main .meta {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .infobox .launch {
+    margin-top: 10px;
+  }
+
+  .infobox .social {
+    width: 108.5446171064%;
+    margin-top: 24px;
+    margin-left: -4.10959%;
+  }
+
+  .meta .infobox {
+    position: relative;
+    z-index: 21;
+    width: 49.0519425675%;
+  }
+
+  .meta .player {
+    position: relative;
+    z-index: 7;
+    width: 49.054054054%;
+    margin-left: 1.875%;
+  }
+
+  .meta .wrapper {
+    position: relative;
+    z-index: 22;
+  }
+
+  .container-main-2 {
+    width: 96.1038961038%;
+    margin-left: 1.93994%;
+  }
+}
+
+@media(max-width: 670px) {
+  .container-main .image {
+    height: auto;
+  }
+
+  .container-main .logo {
+    margin-left: -0.00763%;
+  }
+
+  .container-main .menu {
+    margin-right: 0.03052%;
+  }
+
+  .container-main .meta {
+    width: 66.0095518748%;
+    margin-left: 17.00285%;
+  }
+
+  .infobox .social {
+    width: 112.3456790123%;
+    margin-left: -5.90888%;
+  }
+
+  .meta .infobox {
+    position: relative;
+    z-index: 21;
+    width: 100%;
+  }
+
+  .meta .player {
+    position: relative;
+    z-index: 7;
+    width: 100%;
+    margin-left: 1.87338%;
+  }
+
+  .meta .wrapper {
+    position: relative;
+    z-index: 22;
+  }
+
+  .container-main-2 {
+    margin-left: 1.94092%;
+  }
+}
+
+@media(max-width: 500px) {
+  body {
+    font-size: 1.75em;
+  }
+
+  .container-main .image {
+    height: auto;
+  }
+
+  .container-main .meta {
+    width: 99.8926933957%;
+    margin-left: 0.05853%;
+  }
+
+  .meta .infobox {
+    position: relative;
+    z-index: 21;
+  }
+
+  .meta .player {
+    position: relative;
+    clear: both;
+    z-index: 7;
+    margin-top: 24px;
+    margin-left: 0;
+  }
+
+  .meta .wrapper {
+    position: relative;
+    z-index: 22;
+    margin-top: -370px;
+  }
+}

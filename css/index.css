@@ -1,24 +1,8 @@
 body {
   min-width: none;
-  min-height: nonepx;
   background-color: rgb(42, 62, 64);
   font: 400 1.75em/1.38 'Ubuntu Condensed';
   color: rgb(255, 255, 255);
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .album {
@@ -46,7 +30,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.container-main {
+.container {
   width: 85%;
   margin-right: auto;
   margin-left: auto;
@@ -91,22 +75,6 @@ body {
   width: 150px;
   min-width: none;
   height: 42px;
-  min-height: nonepx;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .logo-image {
@@ -114,52 +82,20 @@ body {
   width: 42px;
   min-width: none;
   height: 42px;
-  min-height: nonepx;
   border-radius: 21px;
   background-color: rgb(17, 195, 215);
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .logo-text {
   display: block;
   float: left;
   min-width: none;
-  min-height: nonepx;
   margin: 6px 0 0 6px;
   background-color: rgba(0, 0, 0, 0);
   font-style: normal;
   font-size: 0.786em;
   line-height: 1.38;
   color: rgb(17, 195, 215);
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .menu {
@@ -167,25 +103,9 @@ body {
   width: 42px;
   min-width: none;
   height: 42px;
-  min-height: nonepx;
   margin-right: 0.0959%;
   border-radius: 21px;
   background-color: rgb(6, 66, 73);
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .meta {
@@ -195,49 +115,14 @@ body {
 }
 
 .nav-main {
-  float: left;
   width: 100%;
-  min-width: none;
   height: 58px;
-  min-height: nonepx;
   background-color: rgb(2, 23, 26);
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
-.nav-main .container-main {
-  min-width: none;
+.nav-main .container {
   height: 42px;
-  min-height: nonepx;
   margin-top: 7px;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  -ms-transform: none;
-  transform: none;
-  -webkit-transition: none;
-  -moz-transition: none;
-  -o-transition: none;
-  -ms-transition: none;
-  transition: none;
-  -webkit-filter: none;
-  -moz-filter: none;
-  -o-filter: none;
-  -ms-filter: none;
-  filter: none;
 }
 
 .player {
@@ -257,13 +142,24 @@ body {
   clear: both;
   width: 106.5146579804%;
   height: 62px;
-  margin: 24px 0 0 -3.25646%;
+  margin: 24px -3.25646% 0 -3.25646%;
 }
 
 .facebook,
 .google,
-.twitter {
+.twitter,
+.imgur {
   height: 62px;
+}
+
+.icon-facebook,
+.icon-google,
+.icon-twitter,
+.icon-imgur {
+  height: 62px;
+  width: 62px;
+  margin: 0 auto;
+  background-color: rgb(222, 222, 222);
 }
 
 .width25 {
@@ -272,57 +168,37 @@ body {
   width: 25%;
 }
 
-.width25 .facebook,
-.width25 .google,
-.width25 .imgur,
-.width25 .twitter {
-  width: 62px;
-  margin: 0 auto;
-  background-color: rgb(222, 222, 222);
+.content {
+  margin-top: 24px;
 }
 
-.wrapper {
-  position: relative;
-  float: left;
-  clear: both;
-  z-index: 22;
-  width: 99.9999999999%;
-  height: 380px;
-  margin-top: -380px;
-  overflow: hidden;
-}
-
-.container-main-2 {
-  margin-top: 82px;
-}
-
-.width25-1 {
+.width25.facebook {
   left: 0;
   z-index: 15;
 }
 
-.width25-2 {
+.width25.google {
   left: 25%;
   z-index: 13;
 }
 
-.width25-3 {
+.width25.twitter {
   left: 50%;
   z-index: 11;
 }
 
-.width25-4 {
+.width25.imgur {
   left: 75%;
   z-index: 9;
 }
 
 @media(max-width: 1200px) {
-  .container-main {
+  .container {
     width: 96%;
     margin-top: 24px;
   }
 
-  .container-main .image {
+  .container .image {
     float: none;
     width: 82.9166666666%;
     height: auto;
@@ -330,11 +206,11 @@ body {
     margin-left: auto;
   }
 
-  .container-main .menu {
+  .container .menu {
     margin-right: 0.09494%;
   }
 
-  .container-main .meta {
+  .container .meta {
     float: none;
     width: 634px;
     margin-top: 24px;
@@ -363,25 +239,15 @@ body {
     margin-left: 3.78549%;
   }
 
-  .meta .wrapper {
-    position: relative;
-    z-index: 22;
-    margin-top: -118px;
-  }
-
-  .nav-main .container-main {
+  .nav-main .container {
     width: 96%;
   }
 
-  .container-main-2 {
+  .container.content {
     float: left;
     clear: both;
     margin-right: 0;
     margin-left: 2%;
-  }
-
-  .social .width25-1 {
-    width: 24%;
   }
 }
 
@@ -390,20 +256,25 @@ body {
     font-size: 1.75em;
   }
 
-  .container-main .image {
+  .container {
+    width: 96.1038961038%;
+    margin-left: 1.93994%;
+  }
+
+  .container .image {
     width: 100%;
     height: auto;
   }
 
-  .container-main .logo {
+  .container .logo {
     margin-left: -0.00846%;
   }
 
-  .container-main .menu {
+  .container .menu {
     margin-right: 0.03171%;
   }
 
-  .container-main .meta {
+  .container .meta {
     float: left;
     clear: both;
     width: 100%;
@@ -434,31 +305,22 @@ body {
     margin-left: 1.875%;
   }
 
-  .meta .wrapper {
-    position: relative;
-    z-index: 22;
-  }
-
-  .container-main-2 {
-    width: 96.1038961038%;
-    margin-left: 1.93994%;
-  }
 }
 
 @media(max-width: 670px) {
-  .container-main .image {
+  .container .image {
     height: auto;
   }
 
-  .container-main .logo {
+  .container .logo {
     margin-left: -0.00763%;
   }
 
-  .container-main .menu {
+  .container .menu {
     margin-right: 0.03052%;
   }
 
-  .container-main .meta {
+  .container .meta {
     width: 66.0095518748%;
     margin-left: 17.00285%;
   }
@@ -478,17 +340,9 @@ body {
     position: relative;
     z-index: 7;
     width: 100%;
-    margin-left: 1.87338%;
+    margin: 24px 0 0 0;
   }
 
-  .meta .wrapper {
-    position: relative;
-    z-index: 22;
-  }
-
-  .container-main-2 {
-    margin-left: 1.94092%;
-  }
 }
 
 @media(max-width: 500px) {
@@ -496,11 +350,11 @@ body {
     font-size: 1.75em;
   }
 
-  .container-main .image {
+  .container .image {
     height: auto;
   }
 
-  .container-main .meta {
+  .container .meta {
     width: 99.8926933957%;
     margin-left: 0.05853%;
   }
@@ -518,9 +372,4 @@ body {
     margin-left: 0;
   }
 
-  .meta .wrapper {
-    position: relative;
-    z-index: 22;
-    margin-top: -370px;
-  }
 }

@@ -1,11 +1,14 @@
 .full-details {
     position: absolute;
-    background: rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.7);
     height: 500px;
     overflow-y: scroll;
     width: auto;
     right: 0;
     padding: 10px;
+    color: rgb(0,0,0);
+    font-family: courier;
+    font-size: 10px;
     color: rgb(0,0,0);
   }
 
@@ -13,6 +16,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 10000;
   }
 
   .button-more {
@@ -21,6 +25,8 @@
     padding: 10px;
     background: rgb(223, 117, 20);
     color: rgb(255,255,255);
+    font-family: sans-serif;
+    font-size: 12px;
   }
 
   ul {list-style: none;}

@@ -1,7 +1,7 @@
 body {
   min-width: none;
   background-color: rgb(42, 62, 64);
-  font: 400 1.75em/1.38 'Ubuntu Condensed';
+  font: 400 1.75em/1.38 sans-serif;
   color: rgb(255, 255, 255);
 }
 

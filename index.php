@@ -9,10 +9,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0">
-	<title>index</title>
-	<link href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed:400,400" rel="stylesheet" type="text/css">
+	<title>SpotifArt</title>
 	<link rel="stylesheet" href="css/standardize.css">
-	<link rel="stylesheet" href="css/index-grid.css">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/debug.css">
 </head>

@@ -1,5 +1,6 @@
 .full-details {
     position: absolute;
+    bottom: 0;
     background: rgba(255,255,255,0.7);
     height: 500px;
     overflow-y: scroll;
@@ -14,7 +15,7 @@
 
   .more{
     position: absolute;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     z-index: 10000;
   }

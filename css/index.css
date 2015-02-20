@@ -5,6 +5,16 @@ body {
   color: rgb(255, 255, 255);
 }
 
+.container {
+  width: 85%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.content {
+  margin-top: 24px;
+}
+
 .album {
   display: block;
   float: left;
@@ -28,12 +38,6 @@ body {
   font-weight: 400;
   line-height: 1.38;
   color: rgb(255, 255, 255);
-}
-
-.container {
-  width: 85%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .image {
@@ -129,12 +133,20 @@ body {
   position: relative;
   float: left;
   clear: both;
-  z-index: 7;
   width: 100%;
   height: 380px;
   margin-top: 24px;
-  background-color: rgb(222, 222, 222);
 }
+
+    .player iframe,
+    .player object,
+    .player embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
 .social {
   position: relative;
@@ -162,34 +174,15 @@ body {
   background-color: rgb(222, 222, 222);
 }
 
+.width25.facebook { left: 0; }
+.width25.google { left: 25%; }
+.width25.twitter { left: 50%; }
+.width25.imgur { left: 75%; }
+
 .width25 {
   position: absolute;
   top: 0;
   width: 25%;
-}
-
-.content {
-  margin-top: 24px;
-}
-
-.width25.facebook {
-  left: 0;
-  z-index: 15;
-}
-
-.width25.google {
-  left: 25%;
-  z-index: 13;
-}
-
-.width25.twitter {
-  left: 50%;
-  z-index: 11;
-}
-
-.width25.imgur {
-  left: 75%;
-  z-index: 9;
 }
 
 @media(max-width: 1200px) {

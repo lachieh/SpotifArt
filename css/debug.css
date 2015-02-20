@@ -1,0 +1,28 @@
+.full-details {
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+    height: 500px;
+    overflow-y: scroll;
+    width: auto;
+    right: 0;
+    padding: 10px;
+    color: rgb(0,0,0);
+  }
+
+  .more{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .button-more {
+    border: 1px solid rgba(220,150,50,1);
+    border-radius: 5px;
+    padding: 10px;
+    background: rgb(223, 117, 20);
+    color: rgb(255,255,255);
+  }
+
+  ul {list-style: none;}
+  ul.more li ul li {display: none;}
+  ul.more li:hover ul li {display: block;}

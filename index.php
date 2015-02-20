@@ -48,7 +48,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="player"></div>
+			<div class="player"><iframe src="https://embed.spotify.com/?uri=<?php echo $track->album->uri?>" style="border:0" allowtransparency="true"></iframe></div>
 		</div>
 	</div>
 

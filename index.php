@@ -32,7 +32,7 @@
 				<span class="album"><?php echo $track->album->name ?></span>
 				<span class="artist"><?php echo $track->artists[0]->name ?></span>
 				</div>
-				<button class="launch">OPEN IN SPOTIFY</button>
+				<a href="<?php echo $track->external_urls->spotify ?>" class="launch">OPEN IN SPOTIFY</a>
 				<div class="social">
 					<div class="width25 facebook clearfix">
 						<div class="icon-facebook"></div>
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="player"></div>
+			<div class="player"><iframe src="https://embed.spotify.com/?uri=<?php echo $track->album->uri?>" style="border:0" allowtransparency="true"></iframe></div>
 		</div>
 	</div>
 

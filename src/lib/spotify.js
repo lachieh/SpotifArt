@@ -14,7 +14,7 @@ class Spotify {
     this.expiry = localStorage.getItem('expiry');
   }
 
-  static checkAuth() {
+  checkAuth() {
     if (typeof this.token === 'undefined') {
       window.location.href = this.getAuthUrl();
     } else {

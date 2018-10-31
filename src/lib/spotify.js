@@ -9,6 +9,11 @@ class Spotify {
 
   expiry = null;
 
+  constructor() {
+    this.token = localStorage.getItem('token');
+    this.expiry = localStorage.getItem('expiry');
+  }
+
   static checkAuth() {
     if (typeof this.token === 'undefined') {
       window.location.href = this.getAuthUrl();
@@ -29,33 +34,48 @@ class Spotify {
       Date.now() + Number(params.expires_in)
     );
 
+    localStorage.setItem('token', this.token);
+    localStorage.setItem('expiry', this.expiry);
+
     return true;
   }
 
   async getCurrentUser() {
-    const request = this.getRequest('/me');
-
-    return fetch(request)
-      .then(res => res.json())
-      .catch(() => false);
+    return this.getOrFetch('/me', 'user');
   }
 
   async getCurrentTrack() {
-    const request = this.getRequest('/me/player/currently-playing');
-
-    return fetch(request)
-      .then(res => res.json())
-      .catch(() => false);
+    return this.getOrFetch('/me/player/currently-playing', 'track');
   }
 
-  getRequest(endpoint) {
+  getOrFetch(endpoint, key) {
+    let cache = null;
+    try {
+      cache = JSON.parse(localStorage.getItem(key));
+    } catch (error) {
+      console.error(error);
+      cache = null;
+    }
+
+    if (cache !== null) {
+      return cache;
+    }
+
     const url = `https://api.spotify.com/v1${endpoint}`;
 
-    return new Request(url, {
+    const request = new Request(url, {
       headers: new Headers({
         Authorization: `Bearer ${this.token}`,
       }),
     });
+
+    return fetch(request)
+      .then(res => res.json())
+      .then(data => {
+        localStorage.setItem(key, JSON.stringify(data));
+        return data;
+      })
+      .catch(() => false);
   }
 
   getAuthUrl() {

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import AlbumCover from './AlbumCover';
 import AlbumMeta from './AlbumMeta';
 import Spotify from '../lib/spotify';
+import User from './User';
 
 const spotify = new Spotify();
 
@@ -23,12 +24,34 @@ class App extends Component {
     track: null,
   };
 
-  async componentDidMount() {
+  constructor() {
+    super();
+    this.handleLogout = this.handleLogout.bind(this);
+  }
+
+  componentDidMount() {
+    this.setState({
+      user: Spotify.getFromCache('user'),
+      track: Spotify.getFromCache('track'),
+    });
+
     if (spotify.token) {
-      const user = await spotify.getCurrentUser();
-      const track = await spotify.getCurrentTrack();
-      this.setState({ user, track });
+      spotify.getCurrentUser().then(user => {
+        this.setState({ user });
+      });
+
+      spotify.getCurrentTrack().then(track => {
+        this.setState({ track });
+      });
     }
+  }
+
+  handleLogout() {
+    spotify.logout();
+    this.setState({
+      track: null,
+      user: null,
+    });
   }
 
   render() {
@@ -56,6 +79,7 @@ class App extends Component {
               />
             </div>
           )}
+          <User user={user} login={spotify.login} logout={this.handleLogout} />
           <Route path="/callback" render={Callback} />
           <Route path="/login" render={Login} />
         </div>
